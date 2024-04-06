@@ -5,7 +5,7 @@ function Events() {
         <div className = "events-container">
             <div>
             <h3>Follow our socials!</h3>
-            <h4>Want to know more about Physics club? <a href = "https://ayjphysics.vercel.app/more-resources">Follow us!</a></h4>
+            <h4>Want to know more about Physics club? <a href = "https://ayjphysicsclub.vercel.app/more-resources">Follow us!</a></h4>
             </div>
             
             <div>
