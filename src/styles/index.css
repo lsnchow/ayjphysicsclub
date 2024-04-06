@@ -1,0 +1,380 @@
+/*the css code, which it was easier (tho probably not the best idea) to put it on 1 page. 
+This is NOT that readable (sorry), open in VSC and use CTRL-F lol */
+
+
+body {
+
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+
+  background-image: url(https://c.pxhere.com/photos/d5/9a/solar_eclipse_sun_flare_solar_eclipse-597908.jpg!d);
+  background-color: black;
+}
+
+/*
+
+background-image: url(https://www.queensu.ca/physics/sites/physwww/files/uploaded_images/Staff%20and%20Faculty/Faculty%20news%20images/2024-QARWN23-HereComesTheSun-NASA-SolarEclipse.jpg);
+  width: auto;
+  height: auto;
+  */
+
+
+  .moreResources {
+    color: white;
+    padding: 1rem;
+  }
+
+  .moreResources {
+    line-height: 3rem;
+  }
+
+
+  .moreResources a {
+    text-decoration: none;
+    color: rgb(0, 217, 255);
+    padding: 0;
+    margin-top: 0rem;
+  }
+
+  .moreResources .instagram {
+    color: rgb(243, 70, 255);
+  }
+
+
+
+  .aboutMeContainer {
+    align-content: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .aboutMeContainer h3 {
+    text-align: center;
+  }
+
+  .events-title {
+    padding: 2rem;
+    color: white;
+  }
+
+  .events-container {
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+  }
+
+
+  
+
+  .eventsButton {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.072);
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+
+  .eventsButton:hover {
+    padding: 1.15rem;
+    color: rgba(255, 255, 255, 0.634);
+  }
+
+
+
+
+
+
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.appDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* i regret not making this chronological :( */
+/*here are the sliding animations*/
+
+.aboutMeContainer {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  padding: 0.5rem;
+
+
+}
+
+
+
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blurIn {
+  from {
+    filter: blur(0.25rem);
+  }
+
+  to {
+    filter: blur(0%);
+  }
+}
+
+@keyframes widthExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+
+.navbarcontainer {
+  background-color: #ff91000e;
+  position: relative;
+}
+
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1rem;
+  justify-content: center;
+  padding: 0.1rem 0.1rem 0.1rem;
+  align-content: center;
+}
+
+.Navbar>h3 {
+  margin: 1rem 0.7rem 1rem;
+  text-decoration: none;
+}
+
+.Navbar .nv1 {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0.3s;
+
+}
+
+.Navbar .nv1:hover {
+  color: grey;
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .Navbar {
+    flex-direction: column;
+    justify-content: center;
+
+
+  }
+
+  .Navbar .nv1,
+  h3 {
+    margin: 0.155rem 1rem 0.155rem 1rem;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .Navbar>h3 {
+    margin: 0.055rem 0 0.055rem 0;
+    justify-content: center;
+    padding: 0;
+  }
+
+
+
+  .appDiv .footercontainer {
+    align-items: center;
+  }
+
+  .appDiv .footercontainer> a {
+    padding: 0.3rem;
+  }
+
+
+}
+
+
+
+
+.footercontainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 40px;
+  padding: 0.5rem;
+  background-color: #ff91000e;
+  align-self: center;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  color: rgb(61, 61, 61);
+}
+
+.footercontainer a {
+
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+}
+
+
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+h2.post-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+.introduction-text {
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  font-family: monospace;
+  margin-bottom: 4rem;
+}
+
+
+/*some thing in react where it doesn't recognize <h1> w/ a classname? had to assign one to the parent div*/
+.typeWriterDiv>h1 {
+  font-size: 5.7rem;
+  margin: 0;
+  color: white
+}
+
+.introduction-text h2 {
+  animation: blurIn 2s forwards, fadeIn 2s forwards;
+  opacity: 0;
+  color: white;
+  padding: 2rem;
+  animation-delay: 3s;
+}
+
+
+
+.Error404 {
+  text-align: center;
+  color:white;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+
+
+
+
+
+
+/*events stuff */
+
+.events-container {
+  align-content: center;
+  align-self: center;
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.529);
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.events-title {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1px;
+  color: rgba(137, 137, 137, 0.363)
+}
+
+.events-container h3 {
+  align-items: center;
+  align-self: center;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
+.events-container h4 {
+  font-size: 1rem;
+} 
+
+.events-container h2 {
+  font-size: 3rem;
+}
+
+
+.events-container a {
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+  margin: auto;
+  width: 20rem;
+  height: 0.105rem;
+  background-color: rgba(255, 255, 255, 0.559);
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin: 1rem auto 1rem auto;
+}
